@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500,600,700");
+body {
+  font-family: "Montserrat";
+  color: #000;
+  font-size: 14px;
+  margin: 0;
+  padding: 0; }
+  @media screen and (max-width: 319px) {
+    body {
+      display: none; } }
+
+.header__content {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  max-width: 1340px;
+  height: 156px; }
+  .header__content .logo {
+    margin-left: 20px; }
+
+.header__content-ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+  .header__content-ul li {
+    margin-right: 114px;
+    list-style: none; }
+    .header__content-ul li a {
+      color: #252B42;
+      text-decoration: none; }
+  .header__content-ul li:nth-child(4) {
+    margin-right: 50px; }
+
+.header__hamburder {
+  display: none; }
+
+@media (min-width: 768px) and (max-width: 968px) {
+  .header__content-img {
+    width: 180px; }
+  .header__content-ul li {
+    margin-right: 86px; }
+  .header__content-ul li:nth-child(4) {
+    margin-right: 40px; }
+  .header__hamburder {
+    display: none; } }
+
+@media (min-width: 568px) and (max-width: 768px) {
+  .header__content-img {
+    width: 160px; }
+  .header__content-ul li {
+    font-size: 14px;
+    margin-right: 44px; }
+  .header__content-ul li:nth-child(4) {
+    margin-right: 30px; }
+  .header__hamburder {
+    display: none; } }
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .header__content {
+    height: 112px; }
+  .header__content-img {
+    width: 104px;
+    margin-left: 25px; }
+  .header__content-ul {
+    display: none; }
+  .header__hamburder {
+    display: block;
+    width: 20px;
+    height: 16px;
+    margin-left: auto;
+    margin-right: 23px;
+    cursor: pointer; }
+    .header__hamburder ul {
+      margin: 0;
+      padding-left: 0px;
+      width: 20px;
+      display: flex !important;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer; }
+      .header__hamburder ul span,
+      .header__hamburder ul span::before,
+      .header__hamburder ul span::after {
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 2px;
+        border-radius: 15px;
+        background-color: #737373; }
+      .header__hamburder ul span::before {
+        content: '';
+        top: 5px; }
+      .header__hamburder ul span::after {
+        content: '';
+        top: 10px; } }
+
+.main {
+  width: 100%;
+  background: url("../assets/main.png");
+  background-size: cover;
+  height: 546px;
+  padding-top: 73px; }
+  .main .main__container {
+    margin: 0 auto;
+    max-width: 937px; }
+
+.main__h2 {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #F6F6F6; }
+
+.main__h1 {
+  text-align: center;
+  margin-top: 27px;
+  color: #FFFFFF;
+  margin-bottom: 28px;
+  font-weight: bold;
+  font-size: 58px;
+  line-height: 80px;
+  letter-spacing: 0.2px; }
+
+.main__p {
+  text-align: center;
+  color: #F6F6F6;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  margin-bottom: 0px; }
+
+.main__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 54px; }
+
+.main__buttons-button {
+  background: #FA4A0C;
+  color: #FFFFFF;
+  width: 236px;
+  height: 68px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px; }
+
+#second {
+  margin-left: 34px;
+  background: none;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.1px; }
+
+.main__img {
+  display: block;
+  margin-left: 50px;
+  margin-top: -135px; }
+
+@media (min-width: 768px) and (max-width: 968px) {
+  .main {
+    padding-top: 66px; }
+    .main .main__container {
+      margin: 0 auto;
+      max-width: 740px; }
+      .main .main__container .main__h2 {
+        font-size: 21px; }
+      .main .main__container .main__h1 {
+        font-size: 50.4px;
+        line-height: 68px; }
+      .main .main__container .main__img {
+        display: block;
+        width: 504px;
+        margin-left: 50px;
+        margin-top: -100px; } }
+
+@media (min-width: 568px) and (max-width: 768px) {
+  .main {
+    padding-top: 61px; }
+    .main .main__container {
+      margin: 0 auto;
+      max-width: 530px; }
+      .main .main__container .main__h2 {
+        font-size: 18.5px; }
+      .main .main__container .main__h1 {
+        font-size: 43.6px;
+        line-height: 58px; }
+      .main .main__container .main__p {
+        font-size: 22px; }
+      .main .main__container .main__img {
+        display: block;
+        width: 464px;
+        margin-left: 0px;
+        margin-top: -80px; } }
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .main {
+    padding-top: 50px;
+    background: #FAFAFA; }
+    .main .main__container {
+      margin: 0 10px;
+      max-width: 568px; }
+      .main .main__container .main__h2 {
+        font-size: 16px;
+        line-height: 24px;
+        color: #737373; }
+      .main .main__container .main__h1 {
+        font-size: 36px;
+        line-height: 42px;
+        color: #252B42; }
+      .main .main__container .main__p {
+        font-size: 24px;
+        line-height: 38px;
+        color: #737373; }
+      .main .main__container .main__img {
+        display: none;
+        width: 355px;
+        margin: 0 auto;
+        margin-top: -55px; }
+      .main .main__container .main__buttons {
+        display: block;
+        justify-content: center;
+        margin-top: 40px; }
+      .main .main__container .main__buttons-button {
+        display: block;
+        margin: 0 auto; }
+      .main .main__container #second {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #FA4A0C;
+        color: #FA4A0C;
+        margin-top: 17px; } }
+
+.work {
+  max-width: 1134px;
+  margin: 0 auto;
+  margin-top: 650px; }
+  .work hr {
+    width: 884px;
+    border: 3px solid #E4E4E4;
+    margin: 0 auto; }
+  .work .work__text {
+    margin-top: 72px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 44px;
+    line-height: 36px;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 0.8; }
+  .work .work__content {
+    display: flex;
+    align-items: center; }
+    .work .work__content .work__content-p {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 36px;
+      letter-spacing: 0.1px;
+      color: #FA4A0C; }
+    .work .work__content .work__content-title {
+      font-weight: bold;
+      font-size: 37px;
+      line-height: 54px;
+      letter-spacing: 0.2px;
+      color: #252B42; }
+
+@media (min-width: 768px) and (max-width: 968px) {
+  .work {
+    margin-top: 550px; }
+    .work hr {
+      width: 720px; }
+    .work .work__text {
+      margin-top: 72px;
+      font-size: 40px;
+      line-height: 44px; }
+    .work .work__content {
+      margin-right: 20px; }
+      .work .work__content img {
+        height: 550px; }
+      .work .work__content .work__content-p {
+        font-size: 22px;
+        line-height: 28px; }
+      .work .work__content .work__content-title {
+        font-size: 32px;
+        line-height: 40px; } }
+
+@media (min-width: 568px) and (max-width: 968px) {
+  .work {
+    margin-top: 450px; }
+    .work hr {
+      width: 520px; }
+    .work .work__text {
+      margin-top: 52px;
+      font-size: 36px;
+      line-height: 40px; }
+    .work .work__content {
+      margin-right: 20px; }
+      .work .work__content img {
+        height: 480px; }
+      .work .work__content .work__content-p {
+        font-size: 20px;
+        line-height: 26px; }
+      .work .work__content .work__content-title {
+        font-size: 26px;
+        line-height: 32px; } }
+
+@media (min-width: 320px) and (max-width: 568px) {
+  .work {
+    margin-top: 100px; }
+    .work hr {
+      width: 300px; }
+    .work .work__content {
+      display: block; }
+      .work .work__content img {
+        display: none;
+        margin: 0 auto;
+        width: 440px; }
+      .work .work__content .work__content-block {
+        text-align: center; } }
